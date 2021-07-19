@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="drop_zone">
+    <link name="base">
+      <inertial>
+        <mass>100</mass>
+      </inertial>
+      <visual name="dropzoneName">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://dropzone_naughts/meshes/Dropzone.dae</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- LED material -->
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material> <!-- End LED material -->
+      </visual>
+      <collision name="col_box_on_ground">
+        <pose>0 0 0.01 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1 1 1</size>
+          </box>
+        </geometry>
+      </collision>
+      
+    </link>
+  </model>
+</sdf>

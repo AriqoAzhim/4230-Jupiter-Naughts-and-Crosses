@@ -1,0 +1,2 @@
+field
+-DCATKIN_DEVEL_PREFIX=/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/install -G Unix Makefiles
