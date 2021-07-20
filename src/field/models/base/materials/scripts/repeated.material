@@ -1,0 +1,14 @@
+material gridTexture
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture grid.png
+      }
+    }
+  }
+}

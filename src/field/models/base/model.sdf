@@ -12,12 +12,13 @@
             <size>1 1 0.1</size>
           </box>
         </geometry>
-        <material> <!-- LED material -->
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-          <specular>0 0 0 0</specular>
-          <emissive>1 1 1 1</emissive>
-        </material> <!-- End LED material -->
+        <material> 
+          <script>
+            <uri>model://base/materials/scripts</uri>
+            <uri>model://base/materials/textures</uri>
+            <name>gridTexture</name>
+          </script>  
+        </material>
       </visual>
       <collision name="base_col_box_on_ground">
         <pose>0 0 0.01 0 0 0</pose>
