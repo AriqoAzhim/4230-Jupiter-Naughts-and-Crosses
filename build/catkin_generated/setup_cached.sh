@@ -7,7 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/src:$ROS_PACKAGE_PATH"

@@ -11,7 +11,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/install}
+: ${_CATKIN_SETUP_DIR:=/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/install}
 _SETUP_UTIL="$_CATKIN_SETUP_DIR/_setup_util.py"
 unset _CATKIN_SETUP_DIR
 
