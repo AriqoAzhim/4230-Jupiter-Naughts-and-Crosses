@@ -3,7 +3,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/devel}
+: ${_CATKIN_SETUP_DIR:=/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/devel}
 CATKIN_SETUP_UTIL_ARGS="--extend --local"
 . "$_CATKIN_SETUP_DIR/setup.sh"
 unset CATKIN_SETUP_UTIL_ARGS

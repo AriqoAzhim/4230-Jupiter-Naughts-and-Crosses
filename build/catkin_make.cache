@@ -1,2 +1,2 @@
 field
--DCATKIN_DEVEL_PREFIX=/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/devel -DCMAKE_INSTALL_PREFIX=/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/install -G Unix Makefiles

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/src
+CMAKE_SOURCE_DIR = /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/build
+CMAKE_BINARY_DIR = /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/src /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/src /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/build /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/build /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/src /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/src /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/build /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/build /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

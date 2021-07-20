@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "field"
-PROJECT_SPACE_DIR = "/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/devel"
+PROJECT_SPACE_DIR = "/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/devel"
 PROJECT_VERSION = "0.0.0"

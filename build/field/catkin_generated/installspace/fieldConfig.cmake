@@ -67,14 +67,14 @@ set(field_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(field_SOURCE_PREFIX /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/src/field)
-  set(field_DEVEL_PREFIX /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/devel)
+  set(field_SOURCE_PREFIX /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/src/field)
+  set(field_DEVEL_PREFIX /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/devel)
   set(field_INSTALL_PREFIX "")
   set(field_PREFIX ${field_DEVEL_PREFIX})
 else()
   set(field_SOURCE_PREFIX "")
   set(field_DEVEL_PREFIX "")
-  set(field_INSTALL_PREFIX /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/install)
+  set(field_INSTALL_PREFIX /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/install)
   set(field_PREFIX ${field_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/install/lib;/home/mtrn4230/ws_moveit/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

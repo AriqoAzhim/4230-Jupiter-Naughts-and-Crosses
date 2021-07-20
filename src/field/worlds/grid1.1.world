@@ -1,0 +1,1079 @@
+<sdf version='1.6'>
+  <world name='default'>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <audio>
+      <device>default</device>
+    </audio>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <model name='dropzone_cross'>
+      <pose frame=''>0.190672 -1.82862 0.05 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.0083</ixx>
+            <iyy>0.0093375</iyy>
+            <izz>0.0026975</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://dropzone/meshes/dropzone.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://dropzone/meshes/dropzone.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+            <specular>0 0 0 0</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='dropzone_cross_0'>
+      <pose frame=''>0.852642 -1.83808 0.05 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.0083</ixx>
+            <iyy>0.0093375</iyy>
+            <izz>0.0026975</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://dropzone/meshes/dropzone.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://dropzone/meshes/dropzone.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+            <specular>0 0 0 0</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='field'>
+      <pose frame=''>1.42222 -1.81269 0.05 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.00748868</ixx>
+            <iyy>0.00748868</iyy>
+            <izz>0.01494</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://field/meshes/Field.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://field/meshes/Field.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+            <specular>0 0 0 0</specular>
+            <emissive>0 1 0 1</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='naught_object'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='naught_object'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://naught_object/materials/scripts</uri>
+              <uri>model://naught_object/materials/textures</uri>
+              <name>NaughtTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='naught_object_col_box'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.59581 -2.03022 0 0 -0 0</pose>
+    </model>
+    <model name='cross_object'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='cross_object'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://cross_object/materials/scripts</uri>
+              <uri>model://cross_object/materials/textures</uri>
+              <name>CrossTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cross_object_col_box'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.65153 -2.00291 0 0 -0 0</pose>
+    </model>
+    <state world_name='default'>
+      <sim_time>855 832000000</sim_time>
+      <real_time>208 652696397</real_time>
+      <wall_time>1626822788 545919376</wall_time>
+      <iterations>207164</iterations>
+      <model name='Field Base_0'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='camera'>
+        <pose frame=''>0 0 1.5 -1.57079 1.57079 3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 1.5 -1.57079 1.57079 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='cross_object'>
+        <pose frame=''>-0.090798 -0.088633 0.055 -0 -0 -1e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>-0.090798 -0.088633 0.055 -0 -0 -1e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 0 -0 0 -0 0</acceleration>
+          <wrench>-0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='cross_object_clone'>
+        <pose frame=''>-0.002314 0.096104 0.055 -0 -0 -1e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>-0.002314 0.096104 0.055 -0 -0 -1e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 0 -0 0 -0 0</acceleration>
+          <wrench>-0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='cross_object_clone_0'>
+        <pose frame=''>0.090059 0.095512 0.055 -0 -0 -1e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>0.090059 0.095512 0.055 -0 -0 -1e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 0 -0 0 -0 0</acceleration>
+          <wrench>-0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='cross_object_clone_1'>
+        <pose frame=''>-0.001697 -0.089754 0.055 -0 -0 -1e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>-0.001697 -0.089754 0.055 -0 -0 -1e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 0 -0 0 -0 0</acceleration>
+          <wrench>-0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='cross_object_clone_1_clone'>
+        <pose frame=''>0.092375 -0.001307 0.055 -0 -0 -1e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>0.092375 -0.001307 0.055 -0 -0 -1e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 0 -0 0 -0 0</acceleration>
+          <wrench>-0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='dropzone_cross'>
+        <pose frame=''>0.25 0.05 0.01 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.25 0.05 0.01 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='dropzone_cross_0'>
+        <pose frame=''>-0.25 0.05 0.01 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.25 0.05 0.01 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='field'>
+        <pose frame=''>-0.154 -0.15 0.05 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.154 -0.15 0.05 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='naught_object'>
+        <pose frame=''>-0.000837 0.005756 0.055 -0 -0 -2.3e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>-0.000837 0.005756 0.055 -0 -0 -2.3e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -0 0 -0 0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='naught_object_clone'>
+        <pose frame=''>-0.096296 0.005505 0.055 -0 -0 -2.3e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>-0.096296 0.005505 0.055 -0 -0 -2.3e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -0 0 -0 0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='naught_object_clone_0'>
+        <pose frame=''>-0.095985 0.093937 0.055 -0 -0 -2.3e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>-0.095985 0.093937 0.055 -0 -0 -2.3e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -0 0 -0 0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='naught_object_clone_1'>
+        <pose frame=''>0.092479 -0.088825 0.055 -0 -0 -2.3e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base'>
+          <pose frame=''>0.092479 -0.088825 0.055 -0 -0 -2.3e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -0 0 -0 0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>0.043475 -0.362654 1.48165 -0 1.1618 1.71219</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='Field Base_0'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+        </inertial>
+        <visual name='base'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1 1 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base/materials/scripts</uri>
+              <uri>model://base/materials/textures</uri>
+              <name>gridTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='base_col_box_on_ground'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1 1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-0.726271 1.60508 0 0 -0 0</pose>
+    </model>
+    <model name='naught_object_clone'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='naught_object'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://naught_object/materials/scripts</uri>
+              <uri>model://naught_object/materials/textures</uri>
+              <name>NaughtTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='naught_object_col_box'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-0.096296 0.005505 0.055 -0 -0 -2.3e-05</pose>
+    </model>
+    <model name='naught_object_clone_0'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='naught_object'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://naught_object/materials/scripts</uri>
+              <uri>model://naught_object/materials/textures</uri>
+              <name>NaughtTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='naught_object_col_box'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>0.093475 0.000939 0.055 -0 -0 -2.3e-05</pose>
+    </model>
+    <model name='cross_object_clone'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='cross_object'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://cross_object/materials/scripts</uri>
+              <uri>model://cross_object/materials/textures</uri>
+              <name>CrossTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cross_object_col_box'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-0.002314 0.096104 0.055 -0 -0 -1e-05</pose>
+    </model>
+    <model name='cross_object_clone_0'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='cross_object'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://cross_object/materials/scripts</uri>
+              <uri>model://cross_object/materials/textures</uri>
+              <name>CrossTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cross_object_col_box'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>0.090059 0.095512 0.055 -0 -0 -1e-05</pose>
+    </model>
+    <model name='cross_object_clone_1'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='cross_object'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://cross_object/materials/scripts</uri>
+              <uri>model://cross_object/materials/textures</uri>
+              <name>CrossTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cross_object_col_box'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-0.001697 -0.089754 0.055 -0 -0 -1e-05</pose>
+    </model>
+    <model name='naught_object_clone_1'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='naught_object'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://naught_object/materials/scripts</uri>
+              <uri>model://naught_object/materials/textures</uri>
+              <name>NaughtTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='naught_object_col_box'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>0.092479 -0.088825 0.055 -0 -0 -2.3e-05</pose>
+    </model>
+    <model name='cross_object_clone_1_clone'>
+      <link name='base'>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='cross_object'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://cross_object/materials/scripts</uri>
+              <uri>model://cross_object/materials/textures</uri>
+              <name>CrossTexture</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cross_object_col_box'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>0.092375 -0.001307 0.055 0 0 -1e-05</pose>
+    </model>
+    <model name='camera'>
+      <link name='link'>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>0.000166667</ixx>
+            <iyy>0.000166667</iyy>
+            <izz>0.000166667</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <sensor name='camera' type='camera'>
+          <camera name='__default__'>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>1280</width>
+              <height>720</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>3</update_rate>
+          <visualize>1</visualize>
+          <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>test/camera</cameraName>
+            <imageTopicName>image_raw</imageTopicName>
+            <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+            <frameName>left_camera_optical_frame</frameName>
+            <hackBaseline>0.07</hackBaseline>
+            <distortionK1>0.0</distortionK1>
+            <distortionK2>0.0</distortionK2>
+            <distortionK3>0.0</distortionK3>
+            <distortionT1>0.0</distortionT1>
+            <distortionT2>0.0</distortionT2>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <shader type='pixel'/>
+          </material>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose frame=''>0 0 1.5 -1.57079 1.57079 3.14159</pose>
+    </model>
+  </world>
+</sdf>

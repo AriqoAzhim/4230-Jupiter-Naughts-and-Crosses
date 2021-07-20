@@ -1,8 +1,8 @@
-# Install script for directory: /home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/src/field
+# Install script for directory: /home/mtrn4230/4230_stuff/finalprobs/catkin_ws/src/field
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/install")
+  set(CMAKE_INSTALL_PREFIX "/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/build/field/catkin_generated/installspace/field.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/build/field/catkin_generated/installspace/field.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/field/cmake" TYPE FILE FILES
-    "/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/build/field/catkin_generated/installspace/fieldConfig.cmake"
-    "/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/build/field/catkin_generated/installspace/fieldConfig-version.cmake"
+    "/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/build/field/catkin_generated/installspace/fieldConfig.cmake"
+    "/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/build/field/catkin_generated/installspace/fieldConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/field" TYPE FILE FILES "/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/src/field/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/field" TYPE FILE FILES "/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/src/field/package.xml")
 endif()
 

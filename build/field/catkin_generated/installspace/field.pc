@@ -1,4 +1,4 @@
-prefix=/home/mtrn4230/major_project/4230-Jupiter-Naughts-and-Crosses/install
+prefix=/home/mtrn4230/4230_stuff/finalprobs/catkin_ws/install
 
 Name: field
 Description: Description of field
