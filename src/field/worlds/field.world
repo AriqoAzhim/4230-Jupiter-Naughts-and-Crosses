@@ -7,8 +7,5 @@
     <include>
         <uri>model://sun</uri>
     </include>
-    <include>
-        <uri>model://dropzone</uri>
-    </include>
     </world>
 </sdf>

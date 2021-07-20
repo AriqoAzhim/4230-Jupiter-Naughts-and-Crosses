@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="naught_object">
+    <link name="base">
+      <inertial>
+        <mass>100</mass>
+      </inertial>
+      <visual name="naught_object">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.01</size>
+          </box>
+        </geometry>
+        <material> 
+          <script>
+            <uri>model://naught_object/materials/scripts</uri>
+            <uri>model://naught_object/materials/textures</uri>
+            <name>NaughtTexture</name>
+          </script>  
+        </material>
+      </visual>
+      <collision name="naught_object_col_box">
+        <pose>0 0 0.01 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      
+    </link>
+  </model>
+</sdf>

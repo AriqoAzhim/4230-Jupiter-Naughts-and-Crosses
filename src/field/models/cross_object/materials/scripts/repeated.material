@@ -1,0 +1,14 @@
+material CrossTexture
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture cross.png
+      }
+    }
+  }
+}
